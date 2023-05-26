@@ -86,4 +86,17 @@ body {
     top: 10%;
     width: 100%;
   }
+
+  #sliding-text {
+    height: 100vh;
+    background-size: cover;
+    background-image: url('https://cdn.glitch.global/f26b7820-38c8-45b7-a6ec-28d67c5718e7/still4.png?v=1683533604813');
+    }
+
+
+
+
+  .allkaki {
+    color:rgb(24, 6, 215);
+  }
   
