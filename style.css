@@ -1,12 +1,10 @@
 body {
-    margin: 0;
-    height: 4000px;
+    height: 6141px;
   }
   
   section {
     margin: auto;
     height: 100vh;
-    width: 100vw;
   }
   
   h1 {
@@ -50,15 +48,7 @@ body {
     bottom: 0;
   }
   
-  .visible {
-    opacity: 100;
-  }
-  
-  .not-visible {
-    opacity: 0;
-  }
-  
-  #text-container {
+  #letter {
     position: relative;
     top: 50%;
     width: 70%;
@@ -71,20 +61,54 @@ body {
     padding: 20px;
     white-space: pre-wrap;
   }
-  
-  .image-div {
-    height: 100vh;
+
+  #justin-letter {
+    top: 0;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-image: url('https://cdn.glitch.global/af55d866-7230-4c11-b0c8-ace17ef210a3/justin%20and%20letterbox.png?v=1685227261891');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #green-star {
+    animation: rotate 7s linear infinite;
+    top: 95%;
+    left: 7%;
+    position: relative;
+    height: 1250px;
+    width: 1250px;
+    z-index: 1;
+    position: absolute;
+    background-image: url('https://cdn.glitch.global/af55d866-7230-4c11-b0c8-ace17ef210a3/shapes.png?v=1685230769336');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #green-star2 {
+    height: 1500px;
+    width: 1500px;
     display: inline-block;
     justify-content: center;
     align-items: center;
-    background-image: url('https://cdn.glitch.global/f26b7820-38c8-45b7-a6ec-28d67c5718e7/still4.png?v=1683533604813');
+    background-image: url('https://cdn.glitch.global/af55d866-7230-4c11-b0c8-ace17ef210a3/shapes.png');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
     top: 10%;
-    width: 100%;
   }
 
   #sliding-text {
@@ -92,11 +116,4 @@ body {
     background-size: cover;
     background-image: url('https://cdn.glitch.global/f26b7820-38c8-45b7-a6ec-28d67c5718e7/still4.png?v=1683533604813');
     }
-
-
-
-
-  .allkaki {
-    color:rgb(24, 6, 215);
-  }
   

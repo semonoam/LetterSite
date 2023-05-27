@@ -1,24 +1,21 @@
+document.body.style.backgroundImage = "url('https://cdn.glitch.global/af55d866-7230-4c11-b0c8-ace17ef210a3/background%20stage%202.png?v=1685226934362')";
+document.body.style.backgroundSize = "contain";
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.overflowX = 'hidden';
+document.body.style.marginLeft = "0";
+document.body.style.marginRight =  "0";
+document.body.style.marginBottom = "0";
+document.body.style.marginTop = "0";
+
 var body = document.querySelector("body");
-var textContainer = document.getElementById("text-container");
+//var textContainer = document.getElementById("letter");
 
 document.addEventListener("scroll", function (scrolled) {
+  //debug
   var currentPixels = window.scrollY;
-
-  //fetch("kaki.txt")
-  //  .then((response) => response.text())
-  //  .then((data) => {
-  //    textContainer.textContent = data;
-  //  });
-  //textContainer.textContent = "asdasdasd";
-  var textContainerHeight = textContainer.offsetHeight;
-  var bodyHeight = document.body.offsetHeight;
-  console.log('Body Height:', bodyHeight + 'px');
-  console.log('Text Container Height:', textContainerHeight + 'px');
-  console.log('Pixels:', currentPixels + 'px');
-
-
-
-  if (currentPixels > bodyHeight*0.5 + 10) {
+  var pageHeight = document.documentElement.scrollHeight;
+  var windowHeight = window.innerHeight;
+  if (scrollPosition + windowHeight >= pageHeight) {
     window.location.href = "stage3.html";
   }
 });

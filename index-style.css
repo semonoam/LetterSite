@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    background-image: url('https://cdn.glitch.global/af55d866-7230-4c11-b0c8-ace17ef210a3/background.png');
+    background-size: cover;
+    background-position: center;
   }
   
   section {
