@@ -1,5 +1,3 @@
-function redirectToPage() {
-    // Change the URL to the desired new page
+setTimeout(function() {
     window.location.href = 'stage2.html';
-  }
-  
+}, 10500);
