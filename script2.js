@@ -24,7 +24,7 @@ document.addEventListener("scroll", function (scrolled) {
   var windowHeight = window.innerHeight;
   if (currentPixels >= 4800) {
     currentPosition = audio.currentTime;
-    currentPosition = currentPosition + 0.8;
+    currentPosition = currentPosition + 0.7;
     window.location.href = "stage3.html?value="+currentPosition;
   }
 });
