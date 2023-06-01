@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function() {
       console.log('currentPixels', currentPixels + 'px');
         if (currentPixels > 8700) {
           currentPosition = audio.currentTime;
-          currentPosition = currentPosition + 0.9;
+          currentPosition = currentPosition + 0.8;
           window.location.href = "stage3.1.html?value="+currentPosition;
       }
   });
