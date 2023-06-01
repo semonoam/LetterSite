@@ -8,8 +8,16 @@ document.body.style.marginBottom = "0";
 document.body.style.marginTop = "0";
 document.body.style.width = '12000px';
 document.body.style.height = '1080px';
-//document.body.style.overflowX = 'scroll';
-//document.body.style.overflowY = 'hidden';
+
+const urlParams = new URLSearchParams(window.location.search);
+const value = parseInt(urlParams.get('value'));
+console.log('val', value);
+
+var audio = new Audio('https://cdn.glitch.me/af55d866-7230-4c11-b0c8-ace17ef210a3/paskol.mp3?v=1685306814498');
+audio.loop = true;
+audio.currentTime = value;
+audio.play();
+
 
 window.addEventListener('DOMContentLoaded', function() {
   var scrolling = false;
@@ -25,8 +33,11 @@ window.addEventListener('DOMContentLoaded', function() {
       var currentPixels = window.scrollX;
       console.log('currentPixels', currentPixels + 'px');
         if (currentPixels > 8700) {
-          window.location.href = "stage3.1.html";
+          currentPosition = audio.currentTime;
+          currentPosition = currentPosition + 0.9;
+          window.location.href = "stage3.1.html?value="+currentPosition;
       }
   });
 });
+
 
