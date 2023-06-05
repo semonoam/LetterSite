@@ -39,9 +39,9 @@ body {
   }
 
   #text-letter {
-    font-size: 30px;
+    font-size: 27px;
     font-family: "Microsoft Sans Serif", sans-serif;
-    height: 56%;
+    height: 55%;
     overflow-y: scroll;
     overflow-x: hidden;
     top: 2600px;
@@ -52,7 +52,7 @@ body {
   }
 
   #text-letter-2 {
-    font-size: 30px;
+    font-size: 27px;
     font-family: "Microsoft Sans Serif", sans-serif;
     height: 82%;
     overflow-y: scroll;
